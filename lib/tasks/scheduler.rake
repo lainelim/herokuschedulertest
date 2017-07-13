@@ -3,3 +3,7 @@ task :update_feed => :environment do
   puts "Updating feed..."
   puts "done."
 end
+
+task :send_reminders => :environment do
+  UserMailer.testmail
+end
