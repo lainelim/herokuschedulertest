@@ -6,4 +6,7 @@ class UserMailer < ApplicationMailer
    mail(to: @user.email, subject: 'Sample Email')
  end
 
+ def testmail
+  mail(to: 'lainex@gmail.com', subject: 'Sample Email')
+ end
 end
